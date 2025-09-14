@@ -45,17 +45,17 @@ const Navigation = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/AtharvaD-coder" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/atharvadomane06" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://www.linkedin.com/in/atharva-domane" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/atharva-domane-5271952b8" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:atharvadomane2003@gmail.com">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -99,17 +99,17 @@ const Navigation = () => {
               </button>
               <div className="flex space-x-4 pt-4">
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://github.com/AtharvaD-coder" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/atharvadomane06" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://www.linkedin.com/in/atharva-domane" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/atharva-domane-5271952b8" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="mailto:atharvadomane2003@gmail.com">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com" target="_blank" rel="noopener noreferrer">
                     <Mail className="h-5 w-5" />
                   </a>
                 </Button>

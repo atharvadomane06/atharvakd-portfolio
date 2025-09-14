@@ -28,12 +28,12 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      link: "https://github.com/AtharvaD-coder"
+      link: "https://github.com/atharvadomane06"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      link: "https://www.linkedin.com/in/atharva-domane"
+      link: "https://www.linkedin.com/in/atharva-domane-5271952b8"
     }
   ];
 
@@ -97,59 +97,82 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle>Send me a message</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="Enter your name"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="Enter your email"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="Enter subject"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                    placeholder="Enter your message"
-                  />
-                </div>
-                
-                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
-                </Button>
+              <CardContent>
+                <form 
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const formData = new FormData(e.target as HTMLFormElement);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const subject = formData.get('subject');
+                    const message = formData.get('message');
+                    
+                    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com&su=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Hi Atharva,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                    window.open(gmailUrl, '_blank');
+                  }}
+                  className="space-y-4"
+                >
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                      Your Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      required
+                      className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="Enter subject"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={5}
+                      required
+                      className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                      placeholder="Enter your message"
+                    />
+                  </div>
+                  
+                  <Button type="submit" className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">
+                    <Send className="mr-2 h-4 w-4" />
+                    Send Message
+                  </Button>
+                </form>
               </CardContent>
             </Card>
           </div>

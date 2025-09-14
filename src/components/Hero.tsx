@@ -35,17 +35,17 @@ const Hero = () => {
           </div>
           <div className="flex justify-center space-x-6">
             <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
-              <a href="https://github.com/AtharvaD-coder" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/atharvadomane06" target="_blank" rel="noopener noreferrer">
                 <Github className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
-              <a href="https://www.linkedin.com/in/atharva-domane" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/atharva-domane-5271952b8" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
-              <a href="mailto:atharvadomane2003@gmail.com">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Mail className="h-6 w-6" />
               </a>
             </Button>
