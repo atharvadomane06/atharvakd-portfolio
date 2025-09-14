@@ -14,24 +14,40 @@ const Hero = () => {
             Full-Stack Java Developer passionate about building intelligent web applications and solving complex algorithmic challenges
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Mail className="mr-2 h-5 w-5" />
               Get In Touch
             </Button>
-            <Button size="lg" variant="outline">
-              <Download className="mr-2 h-5 w-5" />
-              Download CV
+            <Button 
+              size="lg" 
+              variant="outline"
+              asChild
+            >
+              <a href="/AtharvaDomane-Resume.pdf" download="AtharvaDomane-Resume.pdf">
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </a>
             </Button>
           </div>
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Github className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="https://github.com/AtharvaD-coder" target="_blank" rel="noopener noreferrer">
+                <Github className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Linkedin className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="https://www.linkedin.com/in/atharva-domane" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Mail className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="mailto:atharvadomane2003@gmail.com">
+                <Mail className="h-6 w-6" />
+              </a>
             </Button>
           </div>
         </div>

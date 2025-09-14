@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "atharvadomane03@gmail.com",
-      link: "mailto:atharvadomane03@gmail.com"
+      value: "atharvadomane2003@gmail.com",
+      link: "mailto:atharvadomane2003@gmail.com"
     },
     {
       icon: Phone,
@@ -28,12 +28,12 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      link: "#"
+      link: "https://github.com/AtharvaD-coder"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      link: "#"
+      link: "https://www.linkedin.com/in/atharva-domane"
     }
   ];
 
@@ -83,7 +83,7 @@ const Contact = () => {
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
                     <Button key={index} variant="outline" size="icon" asChild>
-                      <a href={social.link} aria-label={social.label}>
+                      <a href={social.link} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
                         <social.icon className="h-5 w-5" />
                       </a>
                     </Button>
