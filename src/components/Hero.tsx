@@ -45,7 +45,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane006@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Mail className="h-6 w-6" />
               </a>
             </Button>

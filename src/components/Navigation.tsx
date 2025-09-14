@@ -55,7 +55,7 @@ const Navigation = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane006@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -109,7 +109,7 @@ const Navigation = () => {
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane006@gmail.com" target="_blank" rel="noopener noreferrer">
                     <Mail className="h-5 w-5" />
                   </a>
                 </Button>

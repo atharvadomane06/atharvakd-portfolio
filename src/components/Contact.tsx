@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "atharvadomane2003@gmail.com",
-      link: "mailto:atharvadomane2003@gmail.com"
+      value: "atharvadomane006@gmail.com",
+      link: "mailto:atharvadomane006@gmail.com"
     },
     {
       icon: Phone,
@@ -107,7 +107,7 @@ const Contact = () => {
                     const subject = formData.get('subject');
                     const message = formData.get('message');
                     
-                    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane2003@gmail.com&su=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Hi Atharva,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=atharvadomane006@gmail.com&su=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Hi Atharva,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
                     window.open(gmailUrl, '_blank');
                   }}
                   className="space-y-4"
